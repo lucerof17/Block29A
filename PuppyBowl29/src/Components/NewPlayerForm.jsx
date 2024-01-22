@@ -10,9 +10,7 @@ function NewPlayerForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Perform logic to create a new player with newPlayerName
     console.log(`Creating a new player: ${newPlayerName}`);
-    // Add additional logic to send the new player data to the server
   };
 
   return (
@@ -30,4 +28,5 @@ function NewPlayerForm() {
 }
 
 export default NewPlayerForm;
+
 

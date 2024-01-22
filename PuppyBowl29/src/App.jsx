@@ -9,7 +9,7 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="container"> {/* Apply styles from app.css */}
+      <div className="container"> {}
         <NavBar />
         <Routes>
           <Route path="/" element={<AllPlayers />} />

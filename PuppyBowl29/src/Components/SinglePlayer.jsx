@@ -13,13 +13,12 @@ function SinglePlayer() {
         const fetchedPlayer = await fetchPlayer(id);
         setPlayer(fetchedPlayer);
       } catch (error) {
-        // Handle error as needed
         console.error(`Error fetching player with ID ${id}:`, error);
       }
     };
 
     fetchSinglePlayer();
-  }, [id]); // Dependency on id to re-fetch when the id changes
+  }, [id]);
 
   return (
     <div>
@@ -27,7 +26,7 @@ function SinglePlayer() {
       {player ? (
         <div>
           <h4>{player.name}</h4>
-          {/* Display other player details */}
+          {}
         </div>
       ) : (
         <p>Loading...</p>

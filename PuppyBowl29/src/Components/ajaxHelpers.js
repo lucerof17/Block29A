@@ -1,7 +1,6 @@
-// ajaxHelpers.js
 export const fetchPlayers = async () => {
     try {
-      const response = await fetch('/api/players'); // Replace with your actual API endpoint
+      const response = await fetch('https://fsa-puppy-bowl.herokuapp.com/players');
       if (!response.ok) {
         throw new Error('Failed to fetch players');
       }
@@ -15,5 +14,5 @@ export const fetchPlayers = async () => {
   
 
   export const fetchPlayer = async (id) => {
-    // Your implementation here
+    
   };

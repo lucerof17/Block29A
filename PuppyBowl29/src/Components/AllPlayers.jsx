@@ -33,7 +33,7 @@ function AllPlayers() {
         {players.map(player => (
           <div key={player.id}>
             <h4>{player.name}</h4>
-            {/* Display other player information */}
+            {}
             <button onClick={() => handlePlayerClick(player.id)}>
               View Details
             </button>
